@@ -44,13 +44,25 @@
       margin: 0 auto;
       padding: 4rem 1rem;
     }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
     .logo {
-      display: block;
+      flex: none;
       width: 96px;
       height: 96px;
       border-radius: 22px;
-      margin: 0 0 1.5rem;
       box-shadow: 0 8px 24px rgba(194, 65, 12, .25);
+    }
+    header h1 { margin: 0; }
+    header .lead { margin: .25rem 0 0; }
+    @media (max-width: 420px) {
+      .logo { width: 72px; height: 72px; border-radius: 16px; }
+      h1 { font-size: 2rem; }
+      .lead { font-size: 1.05rem; }
     }
     h1 { font-size: 2.5rem; line-height: 1.1; margin: 0 0 .5rem; }
     h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; }
@@ -61,9 +73,13 @@
 </head>
 <body>
 <main>
-  <img class="logo" src="assets/icon.svg" alt="" width="96" height="96">
-  <h1>Sleiv</h1>
-  <p class="lead">Ukemeny og middagsplan for iPhone.</p>
+  <header>
+    <img class="logo" src="assets/icon.svg" alt="" width="96" height="96">
+    <div>
+      <h1>Sleiv</h1>
+      <p class="lead">Ukemeny og middagsplan for iPhone.</p>
+    </div>
+  </header>
 
   <p>Legg inn middagene du lager ofte, planlegg uken og se dagens middag i en
   widget. Alt lagres på telefonen din.</p>
