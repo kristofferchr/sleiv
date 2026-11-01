@@ -1,3 +1,5 @@
+<img src="assets/icon.svg" alt="Sleiv" width="96" height="96">
+
 # Sleiv
 
 Ukemeny og middagsplan for iPhone.

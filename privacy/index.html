@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Personvern – Sleiv</title>
   <meta name="description" content="Personvernerklæring for iOS-appen Sleiv.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sleiv">
+  <meta property="og:title" content="Personvern – Sleiv">
+  <meta property="og:description" content="Personvernerklæring for iOS-appen Sleiv.">
+  <meta property="og:url" content="https://kristofferchr.github.io/sleiv/privacy/">
+  <meta property="og:image" content="https://kristofferchr.github.io/sleiv/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <style>
     :root {
       --bg: #fbfaf7;
@@ -41,12 +53,14 @@
     .meta { color: var(--muted); margin-bottom: 2rem; }
     a { color: var(--accent); }
     hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
-    nav { font-size: .95rem; margin-bottom: 2rem; }
+    nav { font-size: .95rem; margin-bottom: 2rem; display: flex; align-items: center; gap: .5rem; }
+    nav img { width: 28px; height: 28px; border-radius: 7px; }
+    .home { display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; }
   </style>
 </head>
 <body>
 <main>
-  <nav><a href="../">Sleiv</a> · <a href="#nb">Norsk</a> · <a href="#en">English</a></nav>
+  <nav><a class="home" href="../"><img src="../assets/icon.svg" alt="" width="28" height="28">Sleiv</a> · <a href="#nb">Norsk</a> · <a href="#en">English</a></nav>
 
   <section id="nb" lang="nb">
     <h1>Personvernerklæring for Sleiv</h1>
